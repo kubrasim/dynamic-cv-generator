@@ -39,7 +39,7 @@ A full-stack, dynamic CV generation web application developed with **PHP**, **My
 
 1. **Clone the Repository:**
    ```bash
- git clone [https://github.com/kubrasim/dynamic-cv-generator.git](https://github.com/kubrasim/dynamic-cv-generator.git)
+git clone https://github.com/kubrasim/dynamic-cv-generator.git
  2. **Setup XAMPP:**
    * Move the project folder to `C:\xampp\htdocs\cv_project`.
    * Start **Apache** and **MySQL** modules from the XAMPP Control Panel.
