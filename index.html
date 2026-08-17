@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern CV Oluşturucu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="form-side">
+        <h2>Modern CV Oluştur</h2>
+        <form action="process.php" method="POST" enctype="multipart/form-data" onsubmit="return dogrula()">
+            <div class="input-group">
+                <label>Profil Fotoğrafı</label>
+                <input type="file" name="profil_foto" accept="image/*" required>
+            </div>
+            <div class="input-group">
+                <label>Ad Soyad</label>
+                <input type="text" name="ad" id="ad" required>
+            </div>
+            <div class="input-group">
+                <label>E-posta</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <label>Telefon (11 Hane)</label>
+                <input type="text" name="telefon" id="telefon" placeholder="05XXXXXXXXX" required>
+            </div>
+            <div class="input-group">
+                <label>Eğitim</label>
+                <textarea name="egitim" rows="3"></textarea>
+            </div>
+            <div class="input-group">
+                <label>Deneyimler</label>
+                <textarea name="deneyim" rows="3"></textarea>
+            </div>
+            <div class="input-group">
+                <label>Yetenekler (Virgülle ayır)</label>
+                <input type="text" name="yetenekler">
+            </div>
+            <button type="submit" class="btn-save">CV'yi Hazırla</button>
+        </form>
+    </div>
+</div>
+
+<script>
+function dogrula() {
+    const tel = document.getElementById('telefon').value;
+    if(tel.length !== 11) {
+        alert("Telefon numarası 11 hane olmalıdır!");
+        return false;
+    }
+    return true;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body { background-color: #f4f7f6; font-family: 'Inter', sans-serif; margin: 0; padding: 20px; }
+.container { display: flex; max-width: 1000px; margin: 0 auto; gap: 20px; }
+.form-side { flex: 2; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.info-side { flex: 1; background: #2c3e50; color: white; padding: 40px; border-radius: 10px; display: flex; flex-direction: column; justify-content: center; }
+.input-group { margin-bottom: 20px; }
+.input-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #444; }
+.input-group input, .input-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 15px; }
+.btn-save { width: 100%; background: #3498db; color: white; border: none; padding: 15px; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+.btn-save:hover { background: #2980b9; }
